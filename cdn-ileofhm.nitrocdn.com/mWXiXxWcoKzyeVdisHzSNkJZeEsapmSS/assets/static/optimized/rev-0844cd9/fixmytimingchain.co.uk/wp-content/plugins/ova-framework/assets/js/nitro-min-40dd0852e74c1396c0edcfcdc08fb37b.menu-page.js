@@ -1,0 +1,1 @@
+(function(n){"use strict";n(window).on("elementor/frontend/init",function(){elementorFrontend.hooks.addAction("frontend/element_ready/ova_menu_page.default",function(){n(".ova_menu_page.type3").each(function(){const e=n(this).find(".dropdown-toggle");e.off("click").on("click",function(){n(this).parent().find(".dropdown-menu").first().toggle("fast")})})})})})(jQuery);
