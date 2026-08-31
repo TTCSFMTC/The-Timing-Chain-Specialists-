@@ -63,6 +63,11 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
 .pa-banner p{margin:0;color:#c7cbe0}
 .pa-banner .pa-icon-badge{width:44px;height:44px;border-radius:50%;background:#cc1818;display:flex;align-items:center;justify-content:center;flex:0 0 auto}
 .pa-banner-left{display:flex;gap:16px;align-items:center}
+.pa-wordmark{display:flex;flex-direction:column;gap:4px}
+.pa-wordmark-pre{font-size:16px;color:#fff}
+.pa-wordmark-logo{font-size:38px;font-weight:800;line-height:1;letter-spacing:-.5px;font-family:'Poppins','Segoe UI',sans-serif}
+.pa-wordmark-logo .pa-red{color:#e2231a}
+.pa-wordmark-logo .pa-white{color:#fff}
 .pa-note{font-size:13px;color:#888;margin-top:10px}
 .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin:36px 0}
 .price-card{background:#fff;border:1px solid #e7e7e7;border-radius:8px;padding:26px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
@@ -77,14 +82,9 @@ var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof H
   <p class="pa-lead">We keep payment simple and upfront. Alongside standard payment methods, we also offer <strong>Payment Assist</strong> so you can spread the cost of an unexpected repair instead of paying it all in one go.</p>
 
   <div class="pa-banner">
-    <div class="pa-banner-left">
-      <div class="pa-icon-badge">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><rect x="2" y="6" width="20" height="13" rx="1.5"/><path d="M2 10h20M6 15h4"/></svg>
-      </div>
-      <div>
-        <h4>Unexpected repair? Spread the cost with Payment Assist.</h4>
-        <p>0% and low-rate finance options available on qualifying repairs, subject to status.</p>
-      </div>
+    <div class="pa-wordmark">
+      <span class="pa-wordmark-pre">Ask to pay with</span>
+      <span class="pa-wordmark-logo"><span class="pa-red">payment</span><span class="pa-white">assist</span></span>
     </div>
     <a class="elementor-button elementor-button-link elementor-size-sm" href="../contact/index.html"><span class="elementor-button-content-wrapper"><span class="elementor-button-text">Ask About Payment Assist</span></span></a>
   </div>
